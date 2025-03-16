@@ -1,4 +1,53 @@
+main{
+    min-height: 70vh;
+}
 footer{
     @include flex(flex, row, center, space-between);
+    padding: 1rem 3rem;
+    background-color: $azul;
+    p{
+        margin: 0;
+        color: black;
+        font-size: .8rem;
+    }
+}
+
+//SELECCIONES
+.selecciones-section{
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+.side-menu-container{
+    height: 100%;
+    background-color: white;
+    grid-column: 1/2;
+    width: 17rem;
+}
+.side-menu{
     padding: 1rem;
+    background-color: $crema;
+    border-radius: 8px;
+    .nav{
+        gap: .5rem;
+    }
+    .nav-link{
+        width: 16rem;
+        @include flex(flex, row, start, left);
+        font-size: 12px;
+        background-color: $azul;
+        color: white;
+        border-radius: 0%;
+        border: 1px solid $azul;
+        padding: 16px 16px 8px 16px;
+    }
+    .nav-pills{
+        --bs-nav-pills-link-active-bg: $crema;
+    }
+}
+
+.listado{
+    background-color: $crema;
+    margin: .5rem;
+    border-radius: 8px;
 }

@@ -1,6 +1,10 @@
 header {
   background-color: #4263A1;
-  padding: 0 1rem;
+  padding: 0 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 7rem;
+  align-items: center;
 }
 
 .simple-button {
@@ -8,46 +12,84 @@ header {
   background: none;
 }
 
-.user-button {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border-radius: 25%;
-  border: 1px solid black;
-  width: 5rem;
-  height: 3.5rem;
+.logo-img {
+  border-radius: 8px;
+  grid-row: 1/2;
+  grid-column: 1/2;
 }
-.user-button p {
-  margin: 0;
-  font-size: 12px;
+
+.search-form {
+  display: flex;
+  grid-row: 1/2;
+  grid-column: 2/3;
+  width: 60%;
+  height: 2rem;
+  justify-self: center;
+}
+.search-form input {
+  background-color: #DBE8BD;
+}
+.search-form button {
+  position: relative;
+  right: 2.8rem;
 }
 
 .header-buttons {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  width: 15rem;
+  justify-content: right;
+  gap: 1.5rem;
+  grid-row: 1/2;
+  grid-column: 3/4;
+}
+.header-buttons button {
+  color: #DBE8BD;
 }
 
-.header-superior {
+.user-button-div {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  padding: 0.5rem 0;
+  justify-content: center;
+  border-radius: 8px;
+  border: 1px solid black;
+  width: 5rem;
+  height: 3.5rem;
+}
+.user-button-div button {
+  color: black;
+}
+.user-button-div p {
+  margin: 0;
+  font-size: 12px;
 }
 
 .header-inferior {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.header-inferior .navbar {
+  padding: 0.5px;
+}
+.header-inferior .nav-item {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-}
-.header-inferior .nav-item {
-  width: 10rem;
+  width: 14rem;
+  height: 3rem;
   text-align: center;
+  font-size: 13px;
+  border: 1px solid #DBE8BD;
+  border-radius: 8%;
+}
+.header-inferior .nav-item a {
+  color: #DBE8BD;
+}
+
+main {
+  min-height: 70vh;
 }
 
 footer {
@@ -55,7 +97,57 @@ footer {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  padding: 1rem 3rem;
+  background-color: #4263A1;
+}
+footer p {
+  margin: 0;
+  color: black;
+  font-size: 0.8rem;
+}
+
+.selecciones-section {
+  height: 70vh;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+.side-menu-container {
+  height: 100%;
+  background-color: white;
+  grid-column: 1/2;
+  width: 17rem;
+}
+
+.side-menu {
   padding: 1rem;
+  background-color: #DBE8BD;
+  border-radius: 8px;
+}
+.side-menu .nav {
+  gap: 0.5rem;
+}
+.side-menu .nav-link {
+  width: 16rem;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: left;
+  font-size: 12px;
+  background-color: #4263A1;
+  color: white;
+  border-radius: 0%;
+  border: 1px solid #4263A1;
+  padding: 16px 16px 8px 16px;
+}
+.side-menu .nav-pills {
+  --bs-nav-pills-link-active-bg: $crema;
+}
+
+.listado {
+  background-color: #DBE8BD;
+  margin: 0.5rem;
+  border-radius: 8px;
 }
 
 * {
