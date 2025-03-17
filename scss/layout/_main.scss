@@ -6,8 +6,9 @@ footer{
     @include flex(flex, row, center, space-between);
     padding: 1rem 3rem;
     background-color: $azul;
-    p{
-        margin: 0;
+    @extend .roboto-font;
+    a{
+        text-decoration: none;
         color: black;
         font-size: $small-font;
     }
@@ -21,7 +22,7 @@ footer{
     background-repeat: no-repeat;
 }
 //SELECCIONES
-.selecciones-section{
+.remeras-section{
     min-height: 70vh;
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -34,7 +35,7 @@ footer{
 }
 .side-menu{
     padding: 1rem;
-    background-color: $crema;
+    background-color: $lima;
     border-radius: $radius;
     .nav{
         gap: .5rem;
@@ -44,41 +45,45 @@ footer{
         @include flex(flex, row, start, left);
         font-size: $small-font;
         background-color: $azul;
-        color: white;
+        color: $lima;
         border-radius: 0%;
         border: 1px solid $azul;
         padding: 16px 16px 8px 16px;
     }
     .nav-pills{
-        --bs-nav-pills-link-active-bg: $crema;
+        --bs-nav-pills-link-active-bg: $lima;
         --bs-nav-pills-link-active-color: $azul;
     }
 }
 .listado{
-    background-color: $crema;
-    margin: .5rem;
-    border-radius: $radius;
-    padding-top: .5rem;
+    @extend .background-lima-redondeado;
 }
 .tab-content>.active {
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(auto-fill, 16rem);
+    grid-template-columns: repeat(auto-fill, 15.5rem);
     grid-template-rows: repeat(auto-fill, 16rem);
     gap: .5rem;
 }
 .card-remera{
-    width: 16rem;
+    width: 15.5rem;
     height: 16rem;
+    border: 1px solid white;
+    border-radius: $radius;
     transition: all 1s ease;
     &:hover{
         width: 102%;
         height: 102%;
     }
+    img{
+        border-top-left-radius: $radius;
+        border-top-right-radius: $radius;
+    }
 }
 .remera-info{
     @include flex(flex, column, start, left);
     margin-top: 2px;
+    margin-left: 3px;
     h3{
         font-size: $medium-font;
         @extend .alegreya-font;
@@ -90,4 +95,8 @@ footer{
         margin: 0;
     }
     
+}
+.nosotros-section{
+    @extend .background-lima-redondeado;
+    min-height: 70vh;
 }

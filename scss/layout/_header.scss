@@ -25,7 +25,7 @@ header{
     height: 2rem;
     justify-self: center;
     input{
-        background-color: $crema;
+        background-color: $lima;
     }
     button{
         position: relative;
@@ -38,7 +38,7 @@ header{
     grid-row: 1/2;
     grid-column: 3/4;
     button{
-        color: $crema;
+        color: $lima;
     }
 }
 
@@ -48,7 +48,7 @@ header{
     border: 2px solid black;
     width: 5rem;
     height: 3.5rem;
-    @extend .alegreya-font;
+    @extend .roboto-font;
     button{
         color: black;
     }
@@ -71,17 +71,17 @@ header{
         height: 3rem;
         text-align: center;
         font-size: $medium-font;
-        border: 1px solid $crema;
+        border: 1px solid $lima;
         border-radius: $radius;
         
     }
     a{
-        color: $crema;
+        color: $lima;
     }
 }
 
 .seleccionado{
-    background-color: $crema;
+    background-color: $lima;
     a{
         color: black;
     }
