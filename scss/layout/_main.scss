@@ -14,7 +14,7 @@ footer{
 
 //SELECCIONES
 .selecciones-section{
-    height: 70vh;
+    min-height: 70vh;
     display: grid;
     grid-template-columns: 1fr 4fr;
 }
@@ -27,7 +27,7 @@ footer{
 .side-menu{
     padding: 1rem;
     background-color: $crema;
-    border-radius: 8px;
+    border-radius: $radius;
     .nav{
         gap: .5rem;
     }
@@ -45,9 +45,19 @@ footer{
         --bs-nav-pills-link-active-bg: $crema;
     }
 }
-
 .listado{
     background-color: $crema;
     margin: .5rem;
-    border-radius: 8px;
+    border-radius: $radius;
+}
+.tab-content>.active {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, 15rem);
+    grid-template-rows: repeat(auto-fill, 13rem);
+    gap: .5rem;
+}
+.card-remera{
+    width: 15rem;
+    height: 13rem;
 }
