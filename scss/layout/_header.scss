@@ -4,8 +4,7 @@ header{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 6rem;
-    align-items: center;
-    
+    align-items: center;    
 }
 .simple-button{
     border: none;
@@ -46,21 +45,23 @@ header{
 .user-button-div{
     @include flex(flex, column, center, center);
     border-radius: $radius;
-    border: 1px solid black;
+    border: 2px solid black;
     width: 5rem;
     height: 3.5rem;
+    @extend .alegreya-font;
     button{
         color: black;
     }
     p{
         margin: 0;
-        font-size: 12px;
+        font-size: $small-font;
     }
 }
 
 .header-inferior{
     grid-column: 2/3;
     grid-row: 2/3;
+    @extend .alegreya-font;
     .navbar{
         padding: .5px;
     }
@@ -69,7 +70,7 @@ header{
         width: 14rem;
         height: 3rem;
         text-align: center;
-        font-size: 13px;
+        font-size: $medium-font;
         border: 1px solid $crema;
         border-radius: $radius;
         

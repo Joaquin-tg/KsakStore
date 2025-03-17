@@ -1,5 +1,6 @@
 main{
     min-height: 70vh;
+    @extend .roboto-font;
 }
 footer{
     @include flex(flex, row, center, space-between);
@@ -8,10 +9,17 @@ footer{
     p{
         margin: 0;
         color: black;
-        font-size: .8rem;
+        font-size: $small-font;
     }
 }
-
+//HOME PAGE
+.imagen-home-page{
+    min-height: 70vh;
+    background-image: url("../assets/vestuario_futbol_home_page.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 //SELECCIONES
 .selecciones-section{
     min-height: 70vh;
@@ -34,7 +42,7 @@ footer{
     .nav-link{
         width: 16rem;
         @include flex(flex, row, start, left);
-        font-size: 12px;
+        font-size: $small-font;
         background-color: $azul;
         color: white;
         border-radius: 0%;
@@ -43,21 +51,43 @@ footer{
     }
     .nav-pills{
         --bs-nav-pills-link-active-bg: $crema;
+        --bs-nav-pills-link-active-color: $azul;
     }
 }
 .listado{
     background-color: $crema;
     margin: .5rem;
     border-radius: $radius;
+    padding-top: .5rem;
 }
 .tab-content>.active {
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(auto-fill, 15rem);
-    grid-template-rows: repeat(auto-fill, 13rem);
+    grid-template-columns: repeat(auto-fill, 16rem);
+    grid-template-rows: repeat(auto-fill, 16rem);
     gap: .5rem;
 }
 .card-remera{
-    width: 15rem;
-    height: 13rem;
+    width: 16rem;
+    height: 16rem;
+    transition: all 1s ease;
+    &:hover{
+        width: 102%;
+        height: 102%;
+    }
+}
+.remera-info{
+    @include flex(flex, column, start, left);
+    margin-top: 2px;
+    h3{
+        font-size: $medium-font;
+        @extend .alegreya-font;
+        font-weight: 600;
+        margin: 0;
+    }
+    p{
+        font-size: $small-font;
+        margin: 0;
+    }
+    
 }
