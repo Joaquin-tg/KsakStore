@@ -24,6 +24,7 @@ header{
     width: 60%;
     height: 2rem;
     justify-self: center;
+    align-self: flex-start;
     input{
         background-color: $lima;
     }
@@ -68,6 +69,7 @@ header{
     .navbar-toggler{
         border: none;
         padding: 0;
+        margin-bottom: .5rem;
         --bs-navbar-toggler-icon-bg:none;
         color: $lima;
         width: 35px;

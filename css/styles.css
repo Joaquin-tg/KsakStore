@@ -42,6 +42,7 @@ header {
   width: 60%;
   height: 2rem;
   justify-self: center;
+  align-self: flex-start;
 }
 .search-form input {
   background-color: #DBE8BD;
@@ -92,6 +93,7 @@ header {
 .header-inferior .navbar-toggler {
   border: none;
   padding: 0;
+  margin-bottom: 0.5rem;
   --bs-navbar-toggler-icon-bg:none;
   color: #DBE8BD;
   width: 35px;
