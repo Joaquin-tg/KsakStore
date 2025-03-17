@@ -42,7 +42,6 @@ header {
   width: 60%;
   height: 2rem;
   justify-self: center;
-  align-self: flex-start;
 }
 .search-form input {
   background-color: #DBE8BD;
@@ -248,6 +247,7 @@ footer a {
   }
   .search-form {
     width: 12rem;
+    align-self: flex-start;
   }
   .header-inferior .nav-item {
     font-size: 14px;

@@ -113,7 +113,8 @@ footer{
         gap: .8rem;
     }
     .search-form{
-        width: 12rem
+        width: 12rem;
+        align-self: flex-start;
     }
     .header-inferior{
         .nav-item{
@@ -186,6 +187,8 @@ footer{
         }
     }
 }
+
+//BOOTSTRAP BREAKPOINTS
 @media only screen  and (max-width:768px){
     header{
         display: grid;
