@@ -2,7 +2,7 @@ header{
     background-color: $azul;
     padding: 0 3rem;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, auto);
     grid-template-rows: 6rem;
     align-items: center;    
 }
@@ -65,9 +65,20 @@ header{
     .navbar{
         padding: .5px;
     }
+    .navbar-toggler{
+        border: none;
+        padding: 0;
+        --bs-navbar-toggler-icon-bg:none;
+        color: $lima;
+        width: 35px;
+        height: 35px;
+    }
+    .navbar-collapse{
+        justify-content: center;
+    }
     .nav-item{
         @include flex(flex, row, center, center);
-        width: 14rem;
+        padding: 0 2rem;
         height: 3rem;
         text-align: center;
         font-size: $medium-font;

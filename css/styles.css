@@ -19,7 +19,7 @@ header {
   background-color: #2D5287;
   padding: 0 3rem;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, auto);
   grid-template-rows: 6rem;
   align-items: center;
 }
@@ -89,12 +89,23 @@ header {
 .header-inferior .navbar {
   padding: 0.5px;
 }
+.header-inferior .navbar-toggler {
+  border: none;
+  padding: 0;
+  --bs-navbar-toggler-icon-bg:none;
+  color: #DBE8BD;
+  width: 35px;
+  height: 35px;
+}
+.header-inferior .navbar-collapse {
+  justify-content: center;
+}
 .header-inferior .nav-item {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  width: 14rem;
+  padding: 0 2rem;
   height: 3rem;
   text-align: center;
   font-size: 15px;
@@ -126,7 +137,7 @@ footer {
 }
 footer a {
   text-decoration: none;
-  color: black;
+  color: #DBE8BD;
   font-size: 12px;
 }
 
@@ -221,6 +232,101 @@ footer a {
 
 .nosotros-section {
   min-height: 70vh;
+}
+
+@media only screen and (max-width: 500px) {
+  header {
+    padding: 0 0.5rem 1rem 1rem;
+  }
+  footer {
+    padding: 1rem;
+  }
+  .header-buttons {
+    gap: 0.8rem;
+  }
+  .search-form {
+    width: 12rem;
+  }
+  .header-inferior .nav-item {
+    font-size: 14px;
+    height: 2.5rem;
+    padding: 0 1rem;
+  }
+  .header-inferior .navbar-toggler {
+    height: 30px;
+    width: 30px;
+  }
+  .side-menu-container {
+    width: 7rem;
+  }
+  .side-menu .nav-link {
+    width: 6rem;
+  }
+  .tab-content > .active {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, 11rem);
+    grid-template-rows: repeat(auto-fill, 12rem);
+    gap: 0.5rem;
+  }
+  .card-remera {
+    width: 11rem;
+    height: 12rem;
+  }
+  .listado {
+    margin: 5px;
+    padding: 5px;
+  }
+  .nosotros-section p {
+    font-size: 15px;
+  }
+}
+@media only screen and (min-width: 501px) and (max-width: 960px) {
+  header {
+    padding: 0 2rem 1rem 2rem;
+  }
+  footer {
+    padding: 1rem 2rem;
+  }
+  .search-form {
+    width: 70%;
+  }
+  .header-inferior .nav-item {
+    font-size: 14px;
+    height: 2.5rem;
+    padding: 0 1rem;
+  }
+  .side-menu-container {
+    width: 13rem;
+  }
+  .side-menu .nav-link {
+    width: 12rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  header {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: 6rem;
+  }
+  .logo-img {
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+  .header-buttons {
+    grid-row: 1/2;
+    grid-column: 2/3;
+    padding-right: 1.5rem;
+  }
+  .header-inferior {
+    grid-row: 2/3;
+    grid-column: 1/2;
+  }
+  .search-form {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    justify-self: right;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
