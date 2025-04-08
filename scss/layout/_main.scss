@@ -1,5 +1,5 @@
 main{
-    min-height: 70vh;
+   
     @extend .roboto-font;
 }
 footer{
@@ -21,9 +21,17 @@ footer{
     background-size: cover;
     background-repeat: no-repeat;
 }
+.background-lima{
+    background-color: $lima;
+    margin: .5rem;
+    border-radius: $radius;
+    padding: .5rem;
+    overflow-y: auto;
+    height: 65vh;
+}
 //SELECCIONES
-.remeras-section{
-    min-height: 70vh;
+.listado{
+    //min-height: 70vh;
     display: grid;
     grid-template-columns: 1fr 4fr;
 }
@@ -55,9 +63,9 @@ footer{
         --bs-nav-pills-link-active-color: $azul;
     }
 }
-.listado{
-    @extend .background-lima-redondeado;
-}
+// .listado{
+//     @extend .background-lima-redondeado;
+// }
 .tab-content>.active {
     display: grid;
     justify-content: center;
@@ -96,9 +104,18 @@ footer{
     }
     
 }
-.nosotros-section{
-    @extend .background-lima-redondeado;
-    min-height: 70vh;
+
+.nosotros, .blog{
+    h3{
+        font-size: 1.5rem;
+    }
+}
+//BLOG
+.blog-article{
+    border: 1px solid black;
+    border-radius: $radius;
+    padding: 10px;
+    margin: 10px 0;
 }
 
 // MOBILE
@@ -118,7 +135,7 @@ footer{
     }
     .header-inferior{
         .nav-item{
-            font-size: 14px;
+            font-size: $medium-font;
             height: 2.5rem;
             padding: 0 1rem;
         }
@@ -147,13 +164,16 @@ footer{
         width: 11rem;
         height: 12rem;
     }
-    .listado{
+    .background-lima{
         margin: 5px;
         padding: 5px;
     }
-    .nosotros-section{
+    .nosotros, .blog{
         p{
             font-size: $medium-font;
+        }
+        h3{
+            font-size: 1.3rem;
         }
     }
 }
@@ -171,7 +191,7 @@ footer{
     }
     .header-inferior{
         .nav-item{
-            font-size: 14px;
+            font-size: $medium-font;
             height: 2.5rem;
             padding: 0 1rem;
         }
@@ -179,7 +199,6 @@ footer{
     }
     .side-menu-container{
         width: 13rem;
-        
     }
     .side-menu{
         .nav-link{
@@ -188,7 +207,7 @@ footer{
     }
 }
 
-//BOOTSTRAP BREAKPOINTS
+//BOOTSTRAP BREAKPOINT
 @media only screen  and (max-width:768px){
     header{
         display: grid;

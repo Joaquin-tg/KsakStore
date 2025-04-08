@@ -8,13 +8,6 @@
   font-style: normal;
 }
 
-.background-lima-redondeado, .nosotros-section, .listado {
-  background-color: #DBE8BD;
-  margin: 0.5rem;
-  border-radius: 8px;
-  padding: 0.5rem;
-}
-
 header {
   background-color: #2D5287;
   padding: 0 3rem;
@@ -109,7 +102,7 @@ header {
   padding: 0 2rem;
   height: 3rem;
   text-align: center;
-  font-size: 15px;
+  font-size: 14px;
   border: 1px solid #DBE8BD;
   border-radius: 8px;
 }
@@ -122,10 +115,6 @@ header {
 }
 .seleccionado a {
   color: black;
-}
-
-main {
-  min-height: 70vh;
 }
 
 footer {
@@ -150,8 +139,16 @@ footer a {
   background-repeat: no-repeat;
 }
 
-.remeras-section {
-  min-height: 70vh;
+.background-lima {
+  background-color: #DBE8BD;
+  margin: 0.5rem;
+  border-radius: 8px;
+  padding: 0.5rem;
+  overflow-y: auto;
+  height: 65vh;
+}
+
+.listado {
   display: grid;
   grid-template-columns: 1fr 4fr;
 }
@@ -222,7 +219,7 @@ footer a {
   margin-left: 3px;
 }
 .remera-info h3 {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 600;
   margin: 0;
 }
@@ -231,8 +228,15 @@ footer a {
   margin: 0;
 }
 
-.nosotros-section {
-  min-height: 70vh;
+.nosotros h3, .blog h3 {
+  font-size: 1.5rem;
+}
+
+.blog-article {
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px 0;
 }
 
 @media only screen and (max-width: 500px) {
@@ -275,12 +279,15 @@ footer a {
     width: 11rem;
     height: 12rem;
   }
-  .listado {
+  .background-lima {
     margin: 5px;
     padding: 5px;
   }
-  .nosotros-section p {
-    font-size: 15px;
+  .nosotros p, .blog p {
+    font-size: 14px;
+  }
+  .nosotros h3, .blog h3 {
+    font-size: 1.3rem;
   }
 }
 @media only screen and (min-width: 501px) and (max-width: 960px) {
