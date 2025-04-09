@@ -3,7 +3,7 @@
   font-style: normal;
 }
 
-.alegreya-font, .remera-info h3, .header-inferior {
+.alegreya-font, .remera-info b, .header-inferior {
   font-family: "Alegreya", serif;
   font-style: normal;
 }
@@ -131,6 +131,18 @@ footer a {
   font-size: 12px;
 }
 
+h1 {
+  font-size: 1.6rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
 .imagen-home-page {
   min-height: 70vh;
   background-image: url("../assets/vestuario_futbol_home_page.jpg");
@@ -218,7 +230,7 @@ footer a {
   margin-top: 2px;
   margin-left: 3px;
 }
-.remera-info h3 {
+.remera-info b {
   font-size: 14px;
   font-weight: 600;
   margin: 0;
@@ -226,10 +238,6 @@ footer a {
 .remera-info p {
   font-size: 12px;
   margin: 0;
-}
-
-.nosotros h3, .blog h3 {
-  font-size: 1.5rem;
 }
 
 .blog-article {
@@ -262,6 +270,15 @@ footer a {
     height: 30px;
     width: 30px;
   }
+  .listado h1 {
+    font-size: 1.1rem;
+  }
+  .listado h2 {
+    font-size: 1rem;
+  }
+  .listado h3 {
+    font-size: 0.9rem;
+  }
   .side-menu-container {
     width: 7rem;
   }
@@ -286,8 +303,14 @@ footer a {
   .nosotros p, .blog p {
     font-size: 14px;
   }
+  .nosotros h1, .blog h1 {
+    font-size: 1.4rem;
+  }
+  .nosotros h2, .blog h2 {
+    font-size: 1.25rem;
+  }
   .nosotros h3, .blog h3 {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
 }
 @media only screen and (min-width: 501px) and (max-width: 960px) {
@@ -304,6 +327,9 @@ footer a {
     font-size: 14px;
     height: 2.5rem;
     padding: 0 1rem;
+  }
+  .listado h1 {
+    font-size: 1.3rem;
   }
   .side-menu-container {
     width: 13rem;

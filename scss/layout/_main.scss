@@ -13,6 +13,15 @@ footer{
         font-size: $small-font;
     }
 }
+h1{
+    font-size: 1.6rem;
+}
+h2{
+    font-size: 1.5rem;
+}
+h3{
+    font-size: 1.3rem;
+}
 //HOME PAGE
 .imagen-home-page{
     min-height: 70vh;
@@ -29,7 +38,7 @@ footer{
     overflow-y: auto;
     height: 65vh;
 }
-//SELECCIONES
+//SELECCIONES Y CLUBES
 .listado{
     //min-height: 70vh;
     display: grid;
@@ -92,7 +101,7 @@ footer{
     @include flex(flex, column, start, left);
     margin-top: 2px;
     margin-left: 3px;
-    h3{
+    b{
         font-size: $medium-font;
         @extend .alegreya-font;
         font-weight: 600;
@@ -105,11 +114,6 @@ footer{
     
 }
 
-.nosotros, .blog{
-    h3{
-        font-size: 1.5rem;
-    }
-}
 //BLOG
 .blog-article{
     border: 1px solid black;
@@ -117,6 +121,8 @@ footer{
     padding: 10px;
     margin: 10px 0;
 }
+
+
 
 // MOBILE
 @media only screen and (max-width:500px){
@@ -142,6 +148,17 @@ footer{
         .navbar-toggler{
             height: 30px;
             width: 30px;
+        }
+    }
+    .listado{
+        h1{
+            font-size: 1.1rem;
+        }
+        h2{
+            font-size: 1rem;
+        }
+        h3{
+            font-size: .9rem;
         }
     }
     .side-menu-container{
@@ -172,8 +189,14 @@ footer{
         p{
             font-size: $medium-font;
         }
+        h1{
+            font-size: 1.4rem;
+        }
+        h2{
+            font-size: 1.25rem;
+        }
         h3{
-            font-size: 1.3rem;
+            font-size: 1.1rem;
         }
     }
 }
@@ -196,6 +219,11 @@ footer{
             padding: 0 1rem;
         }
         
+    }
+    .listado{
+        h1{
+            font-size: 1.3rem;
+        }
     }
     .side-menu-container{
         width: 13rem;
